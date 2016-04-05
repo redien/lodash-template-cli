@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 // lodash-template-cli - Provides a handy command-line interface for compiling lodash templates.
 // Written in 2016 by Jesper Oskarsson jesosk@gmail.com
