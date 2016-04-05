@@ -1,0 +1,40 @@
+{
+  "name": "lodash-template-cli",
+  "version": "1.0.0",
+  "description": "Provides a handy command-line interface for compiling lodash templates.",
+  "main": "lodash-template-cli.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "bin": {
+    "lodash-template-cli": "./bin/lodash-template-cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redien/lodash-template-cli.git"
+  },
+  "keywords": [
+    "lo-dash",
+    "lodash",
+    "template",
+    "renderer",
+    "cli",
+    "command-line",
+    "command"
+  ],
+  "author": {
+    "name": "Jesper Oskarsson",
+    "url": "http://jesperoskarsson.se",
+    "email": "jesosk@gmail.com"
+  },
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/redien/lodash-template-cli/issues"
+  },
+  "homepage": "https://github.com/redien/lodash-template-cli#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "lodash": "^4.8.2"
+  }
+}
