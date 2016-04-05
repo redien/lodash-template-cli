@@ -1,6 +1,6 @@
 {
   "name": "lodash-template-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provides a handy command-line interface for compiling lodash templates.",
   "main": "lodash-template-cli.js",
   "scripts": {
