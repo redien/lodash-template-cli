@@ -13,10 +13,10 @@
 var program = require('commander');
 var chalk = require('chalk');
 var fs = require('fs');
-var _ = require('lodash');
+var templateTransformer = require('../template-transformer');
 
 program
-  .version('1.0.0')
+  .version('1.1.1')
   .arguments('<input-data-file> <input-template-file> <output-file>')
   .parse(process.argv);
 
@@ -29,11 +29,9 @@ var dataPath = program.args[0];
 var templatePath = program.args[1];
 var outputPath = program.args[2];
 
-var data = fs.readFileSync(dataPath).toString();
-var parsedData = JSON.parse(data);
+var inputStream = fs.createReadStream(dataPath);
+var outputStream = fs.createWriteStream(outputPath);
+
 var template = fs.readFileSync(templatePath).toString();
 
-var compiledTemplate = _.template(template);
-var output = compiledTemplate(parsedData);
-
-fs.writeFileSync(outputPath, output);
+inputStream.pipe(templateTransformer.transformWith(template)).pipe(outputStream);
