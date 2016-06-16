@@ -1,5 +1,5 @@
 # lodash-template-cli
-Provides a handy command-line interface for compiling lodash templates.
+Provides a handy command-line interface for using lodash templating.
 
 ## Installation
 
@@ -15,7 +15,7 @@ npm install -g lodash-template-cli
 
 ## Usage
 
-Run the command with the path to a JSON data file containing a dictionary with the data to compile the template with, a template file and finally an output file.
+Run the command with the path to a JSON data file containing a dictionary with the data to template, a template file and finally an output file.
 
 ```
 Usage: lodash-template-cli [options] <input-data-file> <input-template-file> <output-file>
