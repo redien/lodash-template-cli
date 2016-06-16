@@ -1,5 +1,5 @@
 # lodash-template-cli
-Provides a handy command-line interface for using lodash templating.
+Provides a handy command-line interface for performing lodash templating.
 
 ## Installation
 
